@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+}
+
+.container {
+    display: flex;
+}
+
+.container>div {
+    min-height: 400px;
+
+}
+
+.hero {
+    transform: scale(1.2);
+    background-color: black;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    height: auto;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(136, 129, 129);
+    cursor: pointer;
+}
+
+.product {
+    background-color: white;
+    width: 400px;
+    padding: 50px;
+    padding-left: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.name {
+    color: black;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.price {
+    color: grey;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.sale {
+    color: green;
+    font-weight: 900;
+}
+
+.info {
+    font-size: 0.75rem;
+    color: grey;
+    margin: 15px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+form>* {
+    display: flex;
+    gap: 10px;
+}
+
+form button {
+    align-self: center;
+    border-style: none;
+    color: white;
+    background-color: green;
+    padding: 5px 75px;
+    margin: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(2, 62, 2);
+}
+
+.size input {
+    display: none;
+}
+
+.size label {
+    padding: 0 10px;
+}
+
+.color input[type="radio"] {
+    display: none;
+    /* Hide the default radio buttons */
+}
+
+.color input[type="radio"]+label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color input[type="radio"]:checked+label {
+    border-color: black;
+}
+
+.color input[type="radio"]+.red {
+    background-color: red;
+}
+
+.color input[type="radio"]+.blue {
+    background-color: blue;
+}
+
+.color input[type="radio"]+.green {
+    background-color: green;
+}
+
+.color input[type="radio"]+.pink {
+    background-color: pink;
+}
+
+.quantity input {
+    width: 60px;
+    height: 30px;
+    padding-left: 5px;
+    background-color: rgb(172, 166, 166);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+
+}
